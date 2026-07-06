@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" as="style" crossorigin
   href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-<link rel="stylesheet" href="style.css?v=20260630">
+<link rel="stylesheet" href="style.css?v=20260706">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
 /* 표 헤더 디자인 통일 (전국 리포트와 동일) */
@@ -58,8 +58,8 @@
         </div>
         <div class="kpi">
           <div class="kpi-label">누적 가동시간</div>
-          <div class="kpi-value">1,895.0<span class="kpi-unit">h</span></div>
-          <div class="kpi-delta up">DB숙소 720.0h</div>
+          <div class="kpi-value">6,174.9<span class="kpi-unit">h</span></div>
+          <div class="kpi-delta up">DB숙소 2,534.4h</div>
         </div>
         <div class="kpi">
           <div class="kpi-label">분석 구역</div>
@@ -73,7 +73,7 @@
         </div>
       </div>
       <div class="cmnt" style="margin-top:16px"><div class="cmnt-bar" style="background:#2D6BFF"></div>
-        <div class="cmnt-text">6월 5개 시설의 누적 가동시간은 1,895.0h로, DB숙소 720.0h · 국민체육센터 540.0h · 종합체육관 410.0h 순입니다. DB숙소는 평균 실내온도도 26.29℃로 가장 높아, 이번 달 절감 검토의 최우선 대상입니다.</div>
+        <div class="cmnt-text">6월 5개 시설의 누적 가동시간은 6,174.9h입니다. 진동이 과하게 유발되어 에어컨 가동시간이 과대추정될 수 있는 7대 장비는 데이터 확인 후 제외했으며, 제외 후 기준 DB숙소 2,534.4h · 국민체육센터 2,316.0h · 종합체육관 862.0h 순입니다.</div>
       </div>
     </div>
     <!-- 1-2. 주의 항목 카드 -->
@@ -84,11 +84,11 @@
       </div>
       <div class="alert-item">
         <div class="alert-tag tag-c">ACTION</div>
-        <div class="alert-body"><strong>DB숙소</strong> · 월 누적 720.0h로 전체 1위이며 평균 실내온도도 26.29℃로 가장 높습니다. 26℃ 초과일이 20일로 확인되어 상시 냉방 구역과 설정온도 점검이 필요합니다.</div>
+        <div class="alert-body"><strong>DB숙소</strong> · 월 누적 2,534.4h로 전체 1위이며 평균 실내온도도 27.94℃로 가장 높습니다. 26℃ 초과일이 27일로 확인되어 상시 냉방 구역과 설정온도 점검이 필요합니다.</div>
       </div>
       <div class="alert-item">
         <div class="alert-tag tag-c">CHECK</div>
-        <div class="alert-body"><strong>종합체육관</strong> · 월 누적은 410.0h이지만 제어기 1대당 하루평균 1.5h로 가장 높습니다. 사무실·휴게공간의 반복 가동 패턴을 확인해야 합니다.</div>
+        <div class="alert-body"><strong>국민체육센터</strong> · 월 누적 2,316.0h로 2위이며 제어기 1대당 하루평균 4.06h로 가장 높습니다. 7대 장비 제외 후에도 운전 강도가 높아 층별 반복 가동 패턴을 확인해야 합니다.</div>
       </div>
       <div class="alert-item">
         <div class="alert-tag tag-w">CHECK</div>
@@ -200,7 +200,7 @@
 <section>
   <div class="sec-head">
     <div class="sec-title"><span class="idx">4</span>누적 가동시간 및 운전 강도</div>
-    <div class="sec-note">본 가동시간은 진동센서 기반 추정값이며, 실제 가동시간과 차이가 있을 수 있습니다.</div>
+    <div class="sec-note">본 가동시간은 진동센서로 측정된 진동값을 기준으로 판단한 추정값입니다. 과대추정 우려가 큰 7대 장비는 데이터 확인 후 제외했습니다.</div>
   </div>
 
   <!-- 4-1. 구역별 누적 가동시간 (data/4-1.csv) -->
@@ -209,7 +209,7 @@
     <div class="chart-card-note">단위: h · 제어기수 및 일평균 가동시간 함께 표시</div>
     <div class="cw h260"><canvas id="c-oper-avg"></canvas></div>
     <div class="cmnt"><div class="cmnt-bar" style="background:#2D6BFF"></div>
-      <div class="cmnt-text">6월 월 누적 가동시간은 DB숙소 720.0h, 국민체육센터 540.0h, 종합체육관 410.0h 순입니다. 세 구역이 전체 1,895.0h의 88.1%를 차지하며, 제어기 1대당 하루평균은 종합체육관이 1.5h로 가장 높습니다.</div>
+      <div class="cmnt-text">6월 월 누적 가동시간은 과대추정 우려 장비 7대를 제외한 기준으로 DB숙소 2,534.4h, 국민체육센터 2,316.0h, 종합체육관 862.0h 순입니다. 세 구역이 전체 6,174.9h의 92.5%를 차지하며, 제어기 1대당 하루평균은 국민체육센터가 4.06h로 가장 높습니다.</div>
     </div>
   </div>
 </section>
@@ -305,7 +305,7 @@
       </table>
     </div>
     <div class="cmnt" style="margin-top:12px"><div class="cmnt-bar" style="background:#2D6BFF"></div>
-      <div class="cmnt-text">6월은 DB숙소가 720.0h로 월 누적 1위이고, 국민체육센터 540.0h와 종합체육관 410.0h가 뒤를 잇습니다. 절감 우선순위는 DB숙소의 상시 가동, 국민체육센터 2층 고온, 종합체육관의 높은 제어기당 가동률 순으로 보는 것이 적절합니다.</div>
+      <div class="cmnt-text">6월은 과대추정 우려 장비 7대를 제외한 기준으로 DB숙소가 2,534.4h로 월 누적 1위이고, 국민체육센터 2,316.0h와 종합체육관 862.0h가 뒤를 잇습니다. 절감 우선순위는 DB숙소의 상시 가동과 국민체육센터의 높은 제어기당 운전 강도부터 보는 것이 적절합니다.</div>
     </div>
   </div>
 
@@ -316,7 +316,7 @@
       <div class="t5bw"><canvas id="c-t5in"></canvas></div>
       <table class="t5tbl"><thead><tr><th>#</th><th>구역</th><th>총(h)</th><th>장비</th><th>일평균</th></tr></thead><tbody id="t5inB"></tbody></table>
       <div class="cmnt" style="margin-top:12px"><div class="cmnt-bar" style="background:#2D6BFF"></div>
-        <div class="cmnt-text">TOP5 기준 DB숙소가 720.0h로 가장 높고 국민체육센터 540.0h, 종합체육관 410.0h 순입니다. 제어기 1대당 일평균은 종합체육관 1.5h, 치악체육관 1.1h, DB숙소 0.9h 순이라 누적량과 운전 강도를 함께 봐야 합니다.</div>
+        <div class="cmnt-text">TOP5 기준 DB숙소가 2,534.4h로 가장 높고 국민체육센터 2,316.0h, 종합체육관 862.0h 순입니다. 제어기 1대당 일평균은 국민체육센터 4.06h, DB숙소 3.38h, 종합체육관 2.61h 순이라 누적량과 운전 강도를 함께 봐야 합니다.</div>
       </div>
     </div>
   </div>
@@ -324,11 +324,11 @@
 
 <!-- Footer -->
 <footer class="footer">
-  <div class="footer-note">본 가동시간은 진동센서 기반 추정값이며 실제 가동시간과 차이가 있을 수 있습니다.</div>
+  <div class="footer-note">본 가동시간은 진동센서로 측정된 진동값 기준의 추정값이며 실제 가동시간과 차이가 있을 수 있습니다. 과대추정 우려가 큰 7대 장비는 데이터 확인 후 제외했습니다.</div>
   <div style="text-align:right;flex-shrink:0">COPYRIGHT(C) AirDeep. ALL RIGHTS RESERVED.<br>대표전화 : 1644-8626 | 팩스번호 : 031-212-0610 | 경기도 수원시 영통구 광교로 156, 303호(광교비즈니스센터)</div>
 </footer>
 </div>
 
-<script src="app.js?v=20260630"></script>
+<script src="app.js?v=20260706"></script>
 </body>
 </html>

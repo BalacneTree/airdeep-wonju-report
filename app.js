@@ -289,8 +289,8 @@ async function main(){
      판정/조치는 누적시간·평균온도 기준으로 자동 생성 */
   function autoJudge(zone, total, avgTemp){
     if(zone === 'DB숙소') return { judge:'risk', action:`월 누적 ${total.toFixed(1)}h로 1위이고 평균 ${avgTemp.toFixed(1)}℃입니다. 상시 가동 공간과 설정온도 기준을 우선 점검` };
-    if(zone === '국민체육센터') return { judge:'risk', action:`월 누적 ${total.toFixed(1)}h로 2위입니다. 2층 고온 구간과 지하·1층 반복 가동을 분리해 점검` };
-    if(zone === '종합체육관') return { judge:'risk', action:`월 누적 ${total.toFixed(1)}h이며 제어기당 일평균이 가장 높습니다. 사무실·휴게공간 반복 가동 확인` };
+    if(zone === '국민체육센터') return { judge:'risk', action:`월 누적 ${total.toFixed(1)}h로 2위이고 제어기당 일평균이 가장 높습니다. 2층 고온 구간과 지하·1층 반복 가동을 분리해 점검` };
+    if(zone === '종합체육관') return { judge:'warn', action:`월 누적 ${total.toFixed(1)}h로 3위입니다. 사무실·휴게공간 반복 가동 확인` };
     if(zone === '치악체육관') return { judge:'warn', action:`평균 ${avgTemp.toFixed(1)}℃로 낮은 편입니다. 휴게공간 중심의 저온 구간과 이용시간대를 확인` };
     if(total >= 600)    return { judge:'risk', action:'누적 가동시간이 가장 높은 수준으로 장시간 운전일과 상시 가동 공간을 우선 점검' };
     if(avgTemp >= 25)   return { judge:'warn', action:'평균 실내온도가 높은 편이므로 냉방 설정온도와 야간 운전 기준을 점검' };
@@ -302,13 +302,13 @@ async function main(){
   const operByZone = {};
   const operTotal = operTotalRows.map(r=>{
     const zone = r['구역'];
-    const ctrl = num(r['제어기_대수']) ?? num(r['제어기수']) ?? num(r['제어기']) ?? 0;
+    const ctrl = num(r['제어기_대수']) ?? num(r['제어기대수']) ?? num(r['제어기수']) ?? num(r['제어기']) ?? 0;
     const o = {
       zone,
-      total: num(r['월누적_가동시간_시간']) ?? num(r['누적가동시간']) ?? num(r['총가동']) ?? 0,
+      total: num(r['월누적_가동시간_시간']) ?? num(r['누적가동시간_h']) ?? num(r['누적가동시간']) ?? num(r['총가동']) ?? 0,
       controllers: ctrl,
       chartControllers: ctrl,
-      daily: num(r['제어기1대당_하루평균_가동시간_시간']) ?? num(r['제어기당_일평균가동시간']) ?? num(r['일평균']) ?? 0
+      daily: num(r['제어기1대당_하루평균_가동시간_시간']) ?? num(r['제어기당_일평균가동시간_h']) ?? num(r['제어기당_일평균가동시간']) ?? num(r['일평균']) ?? 0
     };
     operByZone[zone] = o;
     return o;
