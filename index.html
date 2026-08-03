@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" as="style" crossorigin
   href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-<link rel="stylesheet" href="style.css?v=20260706">
+<link rel="stylesheet" href="style.css?v=20260803">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
 /* 표 헤더 디자인 통일 (전국 리포트와 동일) */
@@ -34,7 +34,7 @@
   <div class="hdr-meta">
     <div class="hdr-badge">🏢 원주시설관리공단 전용 리포트</div>
     <div class="hdr-meta-right">
-      <div class="hdr-period">기간<strong>2026.06.01 — 2026.06.30</strong></div>
+      <div class="hdr-period">기간<strong>2026.07.01 — 2026.07.31</strong></div>
       <div class="provided-by">보고서 제공 · AirDeep</div>
     </div>
   </div>
@@ -53,13 +53,13 @@
       <div class="kpi-grid">
         <div class="kpi">
           <div class="kpi-label">전체 운영 기기</div>
-          <div class="kpi-value">65<span class="kpi-unit">대</span></div>
+          <div class="kpi-value">72<span class="kpi-unit">대</span></div>
           <div class="kpi-delta flat">분석 반영 제어기</div>
         </div>
         <div class="kpi">
           <div class="kpi-label">누적 가동시간</div>
-          <div class="kpi-value">6,174.9<span class="kpi-unit">h</span></div>
-          <div class="kpi-delta up">DB숙소 2,534.4h</div>
+          <div class="kpi-value">13,248.4<span class="kpi-unit">h</span></div>
+          <div class="kpi-delta up">DB숙소 6,499.8h</div>
         </div>
         <div class="kpi">
           <div class="kpi-label">분석 구역</div>
@@ -68,12 +68,12 @@
         </div>
         <div class="kpi">
           <div class="kpi-label">제어기당 일평균 상위</div>
-          <div class="kpi-value" style="color:var(--alert)">4.06<span class="kpi-unit" style="color:var(--alert)">h</span></div>
+          <div class="kpi-value" style="color:var(--alert)">7.01<span class="kpi-unit" style="color:var(--alert)">h</span></div>
           <div class="kpi-delta up">국민체육센터</div>
         </div>
       </div>
       <div class="cmnt" style="margin-top:16px"><div class="cmnt-bar" style="background:#2D6BFF"></div>
-        <div class="cmnt-text">6월 5개 시설의 누적 가동시간은 6,174.9h입니다. 진동이 과하게 유발되어 에어컨 가동시간이 과대추정될 수 있는 7대 장비는 데이터 확인 후 제외했으며, 제외 후 기준 DB숙소 2,534.4h · 국민체육센터 2,316.0h · 종합체육관 862.0h 순입니다.</div>
+        <div class="cmnt-text">7월 5개 시설의 누적 가동시간은 13,248.4h입니다. DB숙소 6,499.83h · 국민체육센터 4,130.25h · 종합체육관 1,665.83h 순으로 높고, 상위 3개 구역이 전체의 92.8%를 차지합니다.</div>
       </div>
     </div>
     <!-- 1-2. 주의 항목 카드 -->
@@ -84,15 +84,15 @@
       </div>
       <div class="alert-item">
         <div class="alert-tag tag-c">ACTION</div>
-        <div class="alert-body"><strong>DB숙소</strong> · 월 누적 2,534.4h로 전체 1위이며 평균 실내온도도 27.94℃로 가장 높습니다. 26℃ 초과일이 27일로 확인되어 상시 냉방 구역과 설정온도 점검이 필요합니다.</div>
+        <div class="alert-body"><strong>DB숙소</strong> · 월 누적 6,499.83h로 전체 1위이며 평균 실내온도도 26.73℃입니다. 26℃ 초과일이 26일로 확인되어 상시 냉방 구역과 설정온도 점검이 필요합니다.</div>
       </div>
       <div class="alert-item">
         <div class="alert-tag tag-c">CHECK</div>
-        <div class="alert-body"><strong>국민체육센터</strong> · 월 누적 2,316.0h로 2위이며 제어기 1대당 하루평균 4.06h로 가장 높습니다. 7대 장비 제외 후에도 운전 강도가 높아 층별 반복 가동 패턴을 확인해야 합니다.</div>
+        <div class="alert-body"><strong>국민체육센터</strong> · 월 누적 4,130.25h로 2위이며 제어기 1대당 하루평균 7.01h로 가장 높습니다. 층별 반복 가동과 2층 고온 구간을 함께 확인해야 합니다.</div>
       </div>
       <div class="alert-item">
         <div class="alert-tag tag-w">CHECK</div>
-        <div class="alert-body"><strong>국민체육센터 2층</strong> · 1층은 온습도계 연결 끊김 시간이 많아 분석에서 제외했습니다. 유효 데이터 기준 2층은 26℃ 초과 30일, 최대 28.56℃로 나타나 냉방 도달성 점검이 우선입니다.</div>
+        <div class="alert-body"><strong>국민체육센터 2층</strong> · 1층은 온습도계 연결 끊김 시간이 많아 분석에서 제외했습니다. 유효 데이터 기준 2층은 평균 28.47℃, 28℃ 초과 23일, 최대 29.67℃로 나타나 냉방 도달성 점검이 우선입니다.</div>
       </div>
     </div>
   </div>
@@ -102,7 +102,7 @@
 <section>
   <div class="sec-head">
     <div class="sec-title"><span class="idx">2</span>원주시설관리공단 시설별 기기 운영 현황</div>
-    <div class="sec-sub">5개 시설 · 온습도계 2대 · 분석 반영 제어기 65대</div>
+    <div class="sec-sub">5개 시설 · 온습도계 2대 · 분석 반영 제어기 72대</div>
   </div>
   <div class="facility-grid">
     <!-- 2-1. 종합운동장 기기 현황 -->
@@ -120,8 +120,8 @@
       <div class="facility-name">DB숙소</div>
       <div class="fac-nums">
         <div class="fac-num"><div class="fac-num-val">0</div><div class="fac-num-lbl">온습도계</div></div>
-        <div class="fac-num"><div class="fac-num-val">25</div><div class="fac-num-lbl">제어기</div></div>
-        <div class="fac-num"><div class="fac-num-val">25</div><div class="fac-num-lbl">합계</div></div>
+        <div class="fac-num"><div class="fac-num-val">31</div><div class="fac-num-lbl">제어기</div></div>
+        <div class="fac-num"><div class="fac-num-val">31</div><div class="fac-num-lbl">합계</div></div>
       </div>
       <div class="fac-bar"><span style="width:0%;background:#CFE0FF"></span><span style="width:100%;background:#2D6BFF"></span></div>
     </div>
@@ -150,8 +150,8 @@
       <div class="facility-name">종합체육관</div>
       <div class="fac-nums">
         <div class="fac-num"><div class="fac-num-val">0</div><div class="fac-num-lbl">온습도계</div></div>
-        <div class="fac-num"><div class="fac-num-val">11</div><div class="fac-num-lbl">제어기</div></div>
-        <div class="fac-num"><div class="fac-num-val">11</div><div class="fac-num-lbl">합계</div></div>
+        <div class="fac-num"><div class="fac-num-val">12</div><div class="fac-num-lbl">제어기</div></div>
+        <div class="fac-num"><div class="fac-num-val">12</div><div class="fac-num-lbl">합계</div></div>
       </div>
       <div class="fac-bar"><span style="width:0%;background:#CFE0FF"></span><span style="width:100%;background:#2D6BFF"></span></div>
     </div>
@@ -178,7 +178,7 @@
     </div>
     <div class="cw h220"><canvas id="c-all-temp"></canvas></div>
     <div class="cmnt"><div class="cmnt-bar" style="background:#2D6BFF"></div>
-      <div class="cmnt-text">6월 구역별 일평균 실내온도는 DB숙소가 평균 27.94℃로 가장 높고, 26℃ 초과일 27일·28℃ 초과일 16일로 고온 구간이 장기간 지속되었습니다. 다른 구역은 평균 23.24~25.12℃ 범위에 머물러 DB숙소의 설정온도와 상시 가동 여부를 우선 확인하는 것이 적절합니다.</div>
+      <div class="cmnt-text">7월 구역별 일평균 실내온도는 종합운동장이 평균 27.13℃로 가장 높고, 26℃ 초과일 26일·28℃ 초과일 6일로 고온 구간이 반복되었습니다. DB숙소도 평균 26.73℃, 26℃ 초과 26일로 높아 두 구역의 설정온도와 상시 가동 여부를 우선 확인하는 것이 적절합니다.</div>
     </div>
   </div>
 
@@ -191,7 +191,7 @@
     </div>
     <div class="cw h200"><canvas id="c-outdoor-vs"></canvas></div>
     <div class="cmnt"><div class="cmnt-bar" style="background:#60A5FA"></div>
-      <div class="cmnt-text">국민체육센터 1층은 온습도계 연결 끊김 시간이 많아 이번 분석에서 제외했습니다. 유효 데이터 기준 2층은 평균 27.29℃, 26℃ 초과 30일·27℃ 초과 21일로 고온이 지속되었고, 지하는 평균 25.43℃에 머물러 2층 냉방 설정과 부하 집중 시간대 점검이 필요합니다.</div>
+      <div class="cmnt-text">국민체육센터 1층은 온습도계 연결 끊김 시간이 많아 이번 분석에서 제외했습니다. 유효 데이터 기준 2층은 평균 28.47℃, 26℃ 초과 31일·28℃ 초과 23일로 고온이 지속되었고, 지하는 평균 25.92℃에 머물러 2층 냉방 설정과 부하 집중 시간대 점검이 필요합니다.</div>
     </div>
   </div>
 </section>
@@ -200,7 +200,7 @@
 <section>
   <div class="sec-head">
     <div class="sec-title"><span class="idx">4</span>누적 가동시간 및 운전 강도</div>
-    <div class="sec-note">본 가동시간은 진동센서로 측정된 진동값을 기준으로 판단한 추정값입니다. 과대추정 우려가 큰 7대 장비는 데이터 확인 후 제외했습니다.</div>
+    <div class="sec-note">본 가동시간은 진동센서로 측정된 진동값을 기준으로 판단한 추정값입니다.</div>
   </div>
 
   <!-- 4-1. 구역별 누적 가동시간 (data/4-1.csv) -->
@@ -209,7 +209,7 @@
     <div class="chart-card-note">단위: h · 제어기수 및 일평균 가동시간 함께 표시</div>
     <div class="cw h260"><canvas id="c-oper-avg"></canvas></div>
     <div class="cmnt"><div class="cmnt-bar" style="background:#2D6BFF"></div>
-      <div class="cmnt-text">6월 월 누적 가동시간은 과대추정 우려 장비 7대를 제외한 기준으로 DB숙소 2,534.4h, 국민체육센터 2,316.0h, 종합체육관 862.0h 순입니다. 세 구역이 전체 6,174.9h의 92.5%를 차지하며, 제어기 1대당 하루평균은 국민체육센터가 4.06h로 가장 높습니다.</div>
+      <div class="cmnt-text">7월 월 누적 가동시간은 DB숙소 6,499.83h, 국민체육센터 4,130.25h, 종합체육관 1,665.83h 순입니다. 세 구역이 전체 13,248.4h의 92.8%를 차지하며, 제어기 1대당 하루평균은 국민체육센터가 7.01h로 가장 높습니다.</div>
     </div>
   </div>
 </section>
@@ -231,7 +231,7 @@
     </div>
     <div class="cw h200"><canvas id="c-main-oper"></canvas></div>
     <div class="cmnt"><div class="cmnt-bar" style="background:#2D6BFF"></div>
-      <div class="cmnt-text">종합운동장은 사무공간 104.8h, 기타공간 0.9h로 사무공간 중심의 상시 사용이 뚜렷합니다. 사무공간은 26일 가동되었고 6월 16일 8.58h로 피크가 발생해 근무일·행사일의 잔여 가동 여부를 우선 확인하면 됩니다.</div>
+      <div class="cmnt-text">종합운동장은 사무공간 146.13h, 기타공간 24.79h로 사무공간 중심의 사용이 큽니다. 사무공간은 28일 가동되었고 7월 25일 일 합계 19.52h로 피크가 발생해 휴일·행사일의 잔여 가동 여부를 우선 확인하면 됩니다.</div>
     </div>
   </div>
 
@@ -245,7 +245,7 @@
     </div>
     <div class="cw h180"><canvas id="c-park-oper"></canvas></div>
     <div class="cmnt"><div class="cmnt-bar" style="background:#2D6BFF"></div>
-      <div class="cmnt-text">치악체육관은 사무/응대공간 96.1h, 휴게공간 28.6h로 사무/응대공간 비중이 큽니다. 일 합계는 6월 2일 11.75h로 가장 높고, 사무/응대공간은 27일 가동되어 운영 종료 후 반복 가동 여부를 확인할 필요가 있습니다.</div>
+      <div class="cmnt-text">치악체육관은 사무/응대공간 173.86h, 휴게공간 106.70h로 두 공간 모두 사용량이 늘었습니다. 일 합계는 7월 25일 20.34h로 가장 높고, 사무/응대공간은 30일 가동되어 운영 종료 후 반복 가동 여부를 확인할 필요가 있습니다.</div>
     </div>
   </div>
 
@@ -260,7 +260,7 @@
     </div>
     <div class="cw h200"><canvas id="c-gym-oper"></canvas></div>
     <div class="cmnt"><div class="cmnt-bar" style="background:#2D6BFF"></div>
-      <div class="cmnt-text">국민체육센터는 1층 204.7h, 지하 87.4h, 2층 32.1h 순으로 가동시간이 높습니다. 1층은 6월 30일 13.15h로 피크가 크고 27일 가동되어 상시 사용 구간으로 보이며, 2층은 누적 가동이 낮은 편인데도 고온이 지속되어 냉방 도달성을 별도로 점검해야 합니다.</div>
+      <div class="cmnt-text">국민체육센터는 1층 342.13h, 지하 107.09h, 2층 97.21h 순으로 가동시간이 높습니다. 1층은 30일 가동되고 7월 28일 15.49h로 피크가 커 상시 사용 구간으로 보이며, 2층은 가동이 이어졌는데도 고온이 지속되어 냉방 도달성을 별도로 점검해야 합니다.</div>
     </div>
   </div>
 
@@ -276,7 +276,7 @@
     </div>
     <div class="cw h200"><canvas id="c-park2-oper"></canvas></div>
     <div class="cmnt"><div class="cmnt-bar" style="background:#2D6BFF"></div>
-      <div class="cmnt-text">종합체육관은 휴게공간 98.1h, 사무실 81.6h, VIP실 65.4h, 기타공간 55.3h 순입니다. 휴게공간과 사무실은 30일 모두 가동되었고, VIP실·기타공간은 각각 7일만 가동됐지만 10h 이상 피크가 있어 예약·행사일 기반 제어가 중요합니다.</div>
+      <div class="cmnt-text">종합체육관은 휴게공간 203.74h, 사무실 178.74h, VIP실 4.67h, 기타공간 1.25h 순입니다. 휴게공간과 사무실은 31일 모두 가동되었고, 일 합계는 7월 24일 21.10h로 가장 높아 상시 공간의 종료 후 제어를 우선 확인해야 합니다.</div>
     </div>
   </div>
 </section>
@@ -306,7 +306,7 @@
       </table>
     </div>
     <div class="cmnt" style="margin-top:12px"><div class="cmnt-bar" style="background:#2D6BFF"></div>
-      <div class="cmnt-text">6월은 과대추정 우려 장비 7대를 제외한 기준으로 DB숙소가 2,534.4h로 월 누적 1위이고, 국민체육센터 2,316.0h와 종합체육관 862.0h가 뒤를 잇습니다. 절감 우선순위는 DB숙소의 상시 가동과 국민체육센터의 높은 제어기당 운전 강도부터 보는 것이 적절합니다.</div>
+      <div class="cmnt-text">7월은 DB숙소가 6,499.83h로 월 누적 1위이고, 국민체육센터 4,130.25h와 종합체육관 1,665.83h가 뒤를 잇습니다. 절감 우선순위는 DB숙소의 상시 가동과 국민체육센터의 높은 제어기당 운전 강도부터 보는 것이 적절합니다.</div>
     </div>
   </div>
 
@@ -317,7 +317,7 @@
       <div class="t5bw"><canvas id="c-t5in"></canvas></div>
       <table class="t5tbl"><thead><tr><th>#</th><th>구역</th><th>총(h)</th><th>장비</th><th>일평균</th></tr></thead><tbody id="t5inB"></tbody></table>
       <div class="cmnt" style="margin-top:12px"><div class="cmnt-bar" style="background:#2D6BFF"></div>
-        <div class="cmnt-text">TOP5 기준 DB숙소가 2,534.4h로 가장 높고 국민체육센터 2,316.0h, 종합체육관 862.0h 순입니다. 제어기 1대당 일평균은 국민체육센터 4.06h, DB숙소 3.38h, 종합체육관 2.61h 순이라 누적량과 운전 강도를 함께 봐야 합니다.</div>
+        <div class="cmnt-text">TOP5 기준 DB숙소가 6,499.83h로 가장 높고 국민체육센터 4,130.25h, 종합체육관 1,665.83h 순입니다. 제어기 1대당 일평균은 국민체육센터 7.01h, DB숙소 6.76h, 치악체육관 4.52h 순이라 누적량과 운전 강도를 함께 봐야 합니다.</div>
       </div>
     </div>
   </div>
@@ -325,11 +325,11 @@
 
 <!-- Footer -->
 <footer class="footer">
-  <div class="footer-note">본 가동시간은 진동센서로 측정된 진동값 기준의 추정값이며 실제 가동시간과 차이가 있을 수 있습니다.<br>과대추정 우려가 큰 7대 장비는 데이터 확인 후 제외했습니다.</div>
+  <div class="footer-note">본 가동시간은 진동센서로 측정된 진동값 기준의 추정값이며 실제 가동시간과 차이가 있을 수 있습니다.</div>
   <div style="text-align:right;flex-shrink:0">COPYRIGHT(C) AirDeep. ALL RIGHTS RESERVED.<br>대표전화 : 1644-8626 | 팩스번호 : 031-212-0610 | 경기도 수원시 영통구 광교로 156, 303호(광교비즈니스센터)</div>
 </footer>
 </div>
 
-<script src="app.js?v=20260706"></script>
+<script src="app.js?v=20260803"></script>
 </body>
 </html>

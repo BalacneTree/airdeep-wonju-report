@@ -6,7 +6,7 @@
    새로고침 시 리포트가 자동 갱신됩니다. (파일명이 바뀌면 설정표만 수정)
    ============================================================ */
 
-let DAYS = Array.from({length:30},(_,i)=>`${i+1}`);
+let DAYS = Array.from({length:31},(_,i)=>`${i+1}`);
 const BLUE = ['#2D6BFF','#E5484D','#22C55E','#F59E0B','#7C3AED','#0F766E','#BE185D','#78716C'];
 const GRID = '#E5E9F0';
 let HOLIDAYS = new Set();
@@ -70,7 +70,7 @@ function dayLabel(v){
 
 /* ✏️ 공휴일 날짜 — 주말(토·일)은 자동 계산되고, 여기엔 공휴일만 적으면 됩니다.
    해당 날짜의 x축 라벨이 빨간색으로 표시됩니다. (매달 이 줄만 갱신) */
-const PUBLIC_HOLIDAYS = ['2026-06-03']; // 제9회 전국동시지방선거
+const PUBLIC_HOLIDAYS = ['2026-07-17']; // 제헌절
 
 function isHolidayDate(v){
   const s = String(v ?? '').trim();
